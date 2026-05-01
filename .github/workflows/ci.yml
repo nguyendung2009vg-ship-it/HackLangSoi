@@ -5,7 +5,8 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: lowlevel-studios/setup-theos@main
+      - name: Setup Theos
+        uses: theos/setup-theos@master
       - name: Build Tweak
         run: make package
       - name: Upload Artifact
