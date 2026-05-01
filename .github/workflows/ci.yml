@@ -11,14 +11,14 @@ jobs:
           sudo git clone --recursive https://github.com/theos/theos.git /opt/theos
           sudo chown -R $(id -u):$(id -g) /opt/theos
           echo "THEOS=/opt/theos" >> $GITHUB_ENV
-          echo "/opt/theos/bin" >> $GITHUB_PATH
-
+          echo "/opt/theos/bin" >> $
       - name: Build Tweak
         run: |
+          cd HackLangSoi
           make package
           
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: LSOBypass
-          path: packages/*.deb
+          path: HackLangSoi/packages/*.deb
