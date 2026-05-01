@@ -1,0 +1,9 @@
+Package: com.yourname.lsobypass
+Name: LSOBypass
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Bypass Mic Làng Sói
+Maintainer: YourName
+Author: YourName
+Section: Tweaks
